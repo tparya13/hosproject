@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="abt" id="about">
+    <div class="row w-100">
+        <div class="abtcl col-lg-6">
+            <h1>About Us</h1>
+            <h6>GMRL Labs: Tripunithura's hub for affordable Health Check Ups</h6>
+            <h6>with cutting-edge analyzers, prioritizing your well-being.</h6>
+        </div>
+        <div class="abtig col-lg-6">
+            <img src="../static/images/about1.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section class="abtus">
+    <div class="row abtrw5">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-5">
+            <h6>Welcome to Best Laboratory in Kochi, your distinguished destination for comprehensive and affordable
+                health <span class="chc">check-up packages </span> in Thrippunithura. Step into a realm of healthcare
+                excellence marked by precision, affordability, and unwavering commitment to your well-being.</h6>
+            <h6>At GMRL, our pride lies in our dedication to excellence. Our cutting-edge, fully automated analyzers
+                undergo daily verification against Biorad USA Quality Controls, ensuring accurate and reliable
+                diagnostic results. Your health is paramount, and we strive to provide trustworthy and precise
+                information for your healthcare journey.</h6>
+            <h6>Our dedicated professionals are ready to guide you through every step of your health assessment journey.
+                With a mission to deliver the highest standard of care and convenience, we prioritize your well-being
+                above all else. GMRL Laboratories is not just a healthcare provider; we are your trusted partner on the
+                path to a healthier and happier life.</h6>
+            <h6>Whether you seek routine health check-ups or specialized diagnostics, our facility is equipped with the
+                latest technology to meet your diverse healthcare needs. Our commitment extends beyond diagnostics; we
+                empower you with knowledge and support for proactive health management.</h6>
+            <h6>Experience peace of mind entrusting your health to GMRL Laboratories. In our facility, precision meets
+                affordability, and your well-being takes center stage. Your journey to optimal health begins here, the
+                Best laboratory in Kochi. Choose GMRL Laboratories for a comprehensive, personalized, and empowering
+                healthcare experience. Your health is our priority.</h6>
+        </div>
+        <div class="col-lg-4">
+            <img class="abtig" src="../static/images/welcome-image.jpg" width="480px" height="400px" alt="">
+        </div>
+        <div class="col-lg-1">
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="rw2 row mx-auto">
+        <div class="col9 col-lg-8">
+            <div class="row">
+                <div class="col-lg-2">
+                    <img class="mt-4 ms-3" src="../static/images/make-appointment.png" alt="">
+                </div>
+                <div class="col-lg-7 mt-4">
+                    <h5 class="ms-3"> Make an Appointment</h5>
+                    <h6 class="ms-3">Call +91 81388 62626 or click Book Now to secure your appointment.</h6>
+                </div>
+                <div class="col-lg-3">
+                    <a href="{% url 'hosapp:appointment' %}">
+                        <button type="button" class="btn4 mt-5 btn btn-dark ">Book Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col91 col-lg-4">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img class="mt-4" src="../static/images/openinh-hours-logo.png" alt="">
+                </div>
+                <div class="col-lg-9">
+                    <h5 class="mt-3">Opening Hours</h5>
+                    <h6>Mon - Sat : 6:30pm to 6:00pm</h6>
+                    <h6>Sun : 6:30am - 12:30pm</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rw3 row">
+        <div class="col-lg-2">
+            <img src="../static/images/gmrl-footer-logo.svg" alt="">
+        </div>
+        <div class="col-lg-2">
+            <h4 class="mb-4">Quick Links</h4>
+            <h6>Home</h6>
+            <h6>About Us</h6>
+            <h6>Packages</h6>
+            <h6>Tests</h6>
+            <h6>Gallery</h6>
+            <h6>Blog</h6>
+            <h6>Testimonials</h6>
+            <h6>Branches</h6>
+            <h6>Contact Us</h6>
+            <h6>Privacy Policy</h6>
+            <h6>Terms & Conditions</h6>
+        </div>
+        <div class="col-lg-2">
+            <h4 class="mb-4">Departments</h4>
+            <h6>Pathology</h6>
+            <h6>Biochemistry</h6>
+            <h6>Microbiology</h6>
+            <h6>Serology</h6>
+            <h6>Immunology</h6>
+            <h6>Radiology</h6>
+            <h6>Molecular Biology</h6>
+        </div>
+        <div class="col-lg-3">
+            <h4 class="mb-4">Our Packages</h4>
+            <h6>Executive Package</h6>
+            <h6>Ayush General</h6>
+            <h6>Ayush Silver Plan</h6>
+            <h6>Ayush Diabetic & Kidney Care</h6>
+            <h6>Ayush Gold</h6>
+            <h6>Advanced Cardiac Risk Cover Package</h6>
+        </div>
+        <div class="col-lg-3">
+            <h4 class="mb-4">Get In Touch</h4>
+            <h6>GMRL Laboratories Chambakkara, Ernakulam, Ernakulam - 682011</h6>
+            <h6>+91 81388 62626</h6>
+            <h6>0484 0000 0000</h6>
+            <h6>info@gmrllabs.com</h6>
+            <div class="rw4 row">
+                <div class="col-lg-3">
+                    <i class='bx bxl-facebook-circle' style='color:#0636a2'></i>
+                </div>
+                <div class="col-lg-3">
+                    <i class='bx bxl-twitter' style='color:#00b2ef'></i>
+                </div>
+                <div class="col-lg-3">
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+                <div class="col-lg-3">
+                    <i class='bx bxl-instagram' style='color:#ff7500'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="pak1 w-100" id="package">
+    <div class="row w-100">
+        <div class="abtcl col-lg-6">
+            <h1>Our Packages</h1>
+        </div>
+        <div class="tes col-lg-6">
+            <img src="../static/images/blog.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section class="paks">
+    <div class="pkpgsrw row mx-auto d-flex">
+        <div class="col-lg-8">
+            <h4 class="mb-4">{{pac.name}}</h4>
+            <h6>{{packs.cont1}}</h6>
+            <h6>{{packs.cont2}}</h6>
+            <h6>{{packs.cont3}}</h6>
+            <h6>{{packs.cont4}}</h6>
+            <h6>{{packs.cont5}}</h6>
+            <h6>{{packs.cont6}}</h6>
+            <h6>{{packs.cont7}}</h6>
+            <h6>{{packs.cont8}}</h6>
+            <h6>{{packs.cont9}}</h6>
+            <h6>{{packs.cont10}}</span></h6>
+            <h6>{{packs.cont11}}</h6>
+            <h6>{{packs.cont12}}</h6>
+            <h6>{{packs.cont13}}</h6>
+        </div>
+        <div class="col-lg-4">
+            <button class="btnprc">From:₹ {{pac.price}}</button>
+            <img class="pkpgimg" src="{{pac.image.url}}" alt="">
+        </div>
+    </div>
+</section>
+<section class="pakpg">
+<div class="otpk">
+    <h1 class="mx-auto d-flex justify-content-center mb-3">Other Packages</h1>
+    <h6 class="mx-auto d-flex justify-content-center mb-5">Explore a curated selection of premium packages designed to elevate your experience and meet your unique needs.</h6>
+</div>
+<div class="container">
+<div class="row gmhrw mt-0 pt-0">
+    {% for s in pak %}
+                <div class="card ms-4 p-0" style="width: 28rem;">
+                    <a href="">
+                    <img class="bloimg card-img-top" src="{{s.image.url}}" alt="Card image cap">
+                    <button class="pkbtn">From:₹ {{s.price}}</button>
+                    <div class="lnk">
+                        <img src="../static/images/link.svg" alt="">
+                    </div>
+                    <div class="ms-0 card-body pkbo">
+                        <div class="row">
+                            <div class="col-lg-10">
+                      <p class="card-text ">{{s.name}}</p>
+                      </div>
+                      <div class="col-lg-2  ">
+                        <i class='pic me-2 mt-3  bx bxs-chevron-right'></i>
+                        </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+    {% endfor %}
+</div>
+</div>
+</section>
+<section class="footer">
+    <div class="rw2 row mx-auto">
+        <div class="col9 col-lg-8">
+            <div class="row">
+                <div class="col-lg-1">
+                    <img class="mt-4 ms-3" src="../static/images/make-appointment.png" alt="">
+                </div>
+                <div class="col-lg-8 mt-4">
+                    <h5 class="ms-3"> Make an Appointment</h5>
+                    <h6 class="ms-3">Call +91 81388 62626 or click Book Now to secure your appointment.</h6>
+                </div>
+                <div class="col-lg-3">
+                    <a href="{% url 'hos:appointment' %}">
+                    <button type="button" class="btn4 mt-5 btn btn-dark ">Book Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col91 col-lg-4">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img class="mt-4" src="../static/images/openinh-hours-logo.png" alt="">
+                </div>
+                <div class="col-lg-9">
+                    <h5 class="mt-3">Opening Hours</h5>
+                    <h6>Mon - Sat : 6:30pm to 6:00pm</h6>
+                    <h6>Sun : 6:30am - 12:30pm</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rw3 row">
+        <div class="col-lg-2">
+            <img src="../static/images/gmrl-footer-logo.svg" alt="">
+        </div>
+        <div class="col-lg-2">
+            <h4 class="mb-4">Quick Links</h4>
+            <h6>Home</h6>
+            <h6>About Us</h6>
+            <h6>Packages</h6>
+            <h6>Tests</h6>
+            <h6>Gallery</h6>
+            <h6>Blog</h6>
+            <h6>Testimonials</h6>
+            <h6>Branches</h6>
+            <h6>Contact Us</h6>
+            <h6>Privacy Policy</h6>
+            <h6>Terms & Conditions</h6>
+        </div>
+        <div class="col-lg-2">
+            <h4 class="mb-4">Departments</h4>
+            <h6>Pathology</h6>
+            <h6>Biochemistry</h6>
+            <h6>Microbiology</h6>
+            <h6>Serology</h6>
+            <h6>Immunology</h6>
+            <h6>Radiology</h6>
+            <h6>Molecular Biology</h6>
+        </div>
+        <div class="col-lg-3">
+            <h4 class="mb-4">Our Packages</h4>
+            <h6>Executive Package</h6>
+            <h6>Ayush General</h6>
+            <h6>Ayush Silver Plan</h6>
+            <h6>Ayush Diabetic & Kidney Care</h6>
+            <h6>Ayush Gold</h6>
+            <h6>Advanced Cardiac Risk Cover Package</h6>
+        </div>
+        <div class="col-lg-3">
+            <h4 class="mb-4">Get In Touch</h4>
+            <h6>GMRL Laboratories Chambakkara, Ernakulam, Ernakulam - 682011</h6>
+            <h6>+91 81388 62626</h6>
+            <h6>0484 0000 0000</h6>
+            <h6>info@gmrllabs.com</h6>
+            <div class="rw4 row">
+                <div class="col-lg-3">
+                    <i class='bx bxl-facebook-circle' style='color:#0636a2'></i>
+                </div>
+                <div class="col-lg-3">
+                    <i class='bx bxl-twitter' style='color:#00b2ef'></i>
+                </div>
+                <div class="col-lg-3">
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+                <div class="col-lg-3">
+                    <i class='bx bxl-instagram' style='color:#ff7500'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
